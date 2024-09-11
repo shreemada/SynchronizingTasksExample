@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SynchronizingTasksExample;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        //await ProducerConsumer.Process();
+        await SequencialTasks.Process();
+
+    }
+}
